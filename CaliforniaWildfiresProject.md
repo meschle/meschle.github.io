@@ -31,7 +31,8 @@ GROUP BY ArchiveYear
 ORDER BY ArchiveYear ASC
 ```
 Results pulled: 
-<img scr="images/BQ.results.totalperyear.png?raw=true"/>
+
+<img src="images/BQ.results.totalperyear.png?raw=true" width="300"/>
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 

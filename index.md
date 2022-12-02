@@ -2,9 +2,9 @@
 
 ---
 
-### Category Name 1 
+### Tableau Visualizations At a Glance
 
-[Project 1 Title](/sample_page)
+[California Wildfires 2013-2019: Dashboard](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
@@ -17,7 +17,7 @@
 
 ---
 
-### Category Name 2
+### SQL Queries and R Markdowns
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)

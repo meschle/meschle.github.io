@@ -4,14 +4,14 @@
 
 ### Tableau Visualizations At a Glance
 
-[California Wildfires 2013-2019: Patterns among the Data](https://public.tableau.com/views/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata?:language=en-US&:display_count=n&:origin=viz_share_link)
+[California Wildfires 2013-2019: Patterns among the Data (Tableau)](https://public.tableau.com/views/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata?:language=en-US&:display_count=n&:origin=viz_share_link)
 <img src="images/California Wildfires between 2013-2019_ Patterns among the data.png?raw=true"/>
 
 ---
 
 ### SQL Queries and R Markdowns
 
-- [California Wildfires 2013-2019: Patterns among the Data](## need to finish github page for analysis, then the link should go here)
+- [California Wildfires 2013-2019: Patterns among the Data](meschle.github.ioCaliforniaWildfiresProject)
 
 
 ---

@@ -13,21 +13,26 @@ After sourcing the data (as mentioned above), the data was uploaded to Google Sh
 
 Some cleaning steps taken include removing duplicate entries using the UniqueId column, which gave a unique ID to each fire, thus none of them should have been duplicated. Additionally, removing an unnecessary columns and information that was unneeded for this analysis, for instance the ControlStatement and ConditionStatement columns. Since analysis would be taking place using time elements, attention was given to format all dates correctly and to create a duration column to calculate the amount of days taken to extinguish the fire. However, when calculating duration, some errors in the EntinguishTime column where noted, including some extinguish dates measuring all the way back in 1963 and 470 incidents all recorded with the same extinguish date of 1-9-2018, it was decided to remove the extinguish dates from these entries and leave then `null` instead. 
 
-Please see [cleaning log](https://docs.google.com/spreadsheets/d/1weJfy82Y5t81W9aCjvGJNXxm4e0UUFGdOeAIY5QBY4U/edit#gid=1248527850) for mmore detailed steps taken for data cleaning. 
+Please see [cleaning log](https://docs.google.com/spreadsheets/d/1weJfy82Y5t81W9aCjvGJNXxm4e0UUFGdOeAIY5QBY4U/edit#gid=1248527850) for more detailed steps taken for data cleaning. 
 
-```javascript
-if (isAwesome){
-  return true
-}
+<img src="images/Screen Shot 2022-12-02 at 3.31.51 PM.png?raw=true"/>
+
+### 2. SQL Analysis using BigQuery
+
+Next, some basic SQL analyses were preformed to get a better understanding of the general trends among the data. The BigQuery SQL server was used to preform these analyses. Below are some examples of these SQL queries along with their results. 
+
+1. Total Acres Burned per Year over 2013-2019
+```SQL
+SELECT 
+  ArchiveYear as Year,
+  SUM(AcresBurned) as Total_Acres_Burned
+FROM `wildfires-1878-2019.California_Wildfires.wildfires`
+GROUP BY ArchiveYear
+ORDER BY ArchiveYear ASC
 ```
+Results pulled: 
 
-### 2. Assess assumptions on which statistical inference will be based
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 

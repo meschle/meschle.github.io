@@ -34,6 +34,17 @@ Results pulled:
 
 <img src="images/BQ.results.totalperyear.png?raw=true" width="300"/>
 
+2. Counties with the Most Acres Burned over 2013-2019
+```SQL
+SELECT
+  Counties as Counties, 
+  Count(AcresBurned) as Total_Fire_Incidents
+FROM `wildfires-1878-2019.California_Wildfires.wildfires` 
+GROUP BY Counties
+ORDER BY Total_Fire_Incidents DESC LIMIT 10
+```
+
+
 ### 3. Support the selection of appropriate statistical tools and techniques
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>

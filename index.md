@@ -5,7 +5,7 @@
 ### Tableau Visualizations At a Glance
 
 [California Wildfires 2013-2019: Patterns among the Data](https://public.tableau.com/views/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata?:language=en-US&:display_count=n&:origin=viz_share_link)
-<img src="images/California Wildfires between 2013-2019_ Patterns among the data.png"/>
+<img src="images/California Wildfires between 2013-2019_ Patterns among the data.png?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)

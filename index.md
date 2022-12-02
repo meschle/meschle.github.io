@@ -4,8 +4,8 @@
 
 ### Tableau Visualizations At a Glance
 
-[California Wildfires 2013-2019: Dashboard](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[California Wildfires 2013-2019: Patterns among the Data](https://public.tableau.com/views/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata?:language=en-US&:display_count=n&:origin=viz_share_link)
+<img src="images/California Wildfires between 2013-2019_ Patterns among the data.png"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
@@ -19,11 +19,8 @@
 
 ### SQL Queries and R Markdowns
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+- [California Wildfires 2013-2019: Patterns among the Data](## need to finish github page for analysis, then the link should go here)
+
 
 ---
 

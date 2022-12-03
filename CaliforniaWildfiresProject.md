@@ -112,7 +112,7 @@ ggplot(wdfm, aes(x=ArchiveYear, y= value)) +
   labs(title = "Injuries and Fatalities from California \nWildfires Years 2013-2019", x= "Year", y= "Amount of Injuries or Fatalities")+
   scale_x_continuous(name=waiver(), breaks= waiver(), n.breaks=7)
  ```
- 
+ <img src="images/
  
 
 

@@ -89,7 +89,7 @@ ORDER BY Duration_in_Days DESC LIMIT 10
 ```
 Results pulled:
 
-
+<img src="images/BQ.wildfires.firesabovedur.png?raw=true" width="600"/>
 ____
 
 

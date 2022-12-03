@@ -34,6 +34,8 @@ Results pulled:
 
 <img src="images/BQ.results.totalperyear.png?raw=true" width="300"/>
 
+From this query, we can see already that years 2017 and 2018 had a significant increase in acreage burned
+
 2. Counties with the Most Fires over 2013-2019
 ```SQL
 SELECT

@@ -53,9 +53,9 @@ As predicted, there was a similar pattern with the amount of acres burned per ye
 
 In order to verify this hypothesize, more information would need to be gathered pertaining specifically to the amount of financial resources given to response efforts. This could be a point for further analysis. 
 
-Following, deeper analysis was focused on the county level to see if these general trends also appeared within the counties. The next SQL query was preformed to see which counties had the most fires overall. 
+Following, deeper analysis was focused on the county level to see if these general trends also appeared within the counties. The next SQL query was preformed to see which counties had the most fires overall compared to acreage burned. 
 
-3. Counties with the Most Fires over 2013-2019
+3. Counties with the Most Fires over 2013-2019 Compared to Their Acreage Burned
 ```SQL
 SELECT
   Counties as Counties, 
@@ -66,7 +66,11 @@ ORDER BY Total_Fire_Incidents DESC LIMIT 10
 ```
 Results pulled:
 
-<img src="images/BQ.wildfire.top10count.png?raw=true" width="300"/>
+<img src="images/BQ.wildfire.replace.png?raw=true" width="600"/>
+
+Interestingly, the results indicate that although these counties had an increased number of fires, they were not consistent in being high in acreage burned. Thus, counties may be high in number of fires or acreage burned without needing to be high in both, indicating some potential points for further analysis as to why this may be happening. It could be simplpy some counties are more likely to have higher chances of fires due to higher rates of drought and increased temperatures, but may not have the forestry compared to other counties to set massive blazes. On the other hand, some counties may be full of forests but have less chance of fires due to decreased temperatures and less human population causing wildfires. More analysis into the root cause of the fires could be useful to see why fires are starting in each county in order to best prevent fires and prepare for potential extinguishment. 
+
+Next, focus was directed to the duration of the wildfires in order to see if there was any specific information that could be gained from trends on the amount of time fires are ablaze. 
 
 4. Average Duration of Wildfires in Days per Year
 
@@ -82,22 +86,11 @@ Results pulled:
 
 <img src="images/BQ.wildfire.avgdurpery.png?raw=true" width="300"/>
 
-5. Counties with Above Average Durations of Wildfires and Total Fires Above Duration and Length of Fires
-``` SQL
-SELECT 
-  Counties as Counties,
-  COUNT(AcresBurned) as Total_Fires_Above_Avg_Duration,
-  ROUND(AVG(DurationDays),2) as Avg_Duration_of_Fires_Above_Duration
-FROM `wildfires-1878-2019.California_Wildfires.wildfires`
-WHERE DurationDays>(SELECT AVG(DurationDays) from `wildfires-1878-2019.California_Wildfires.wildfires`)
-GROUP BY Counties
-ORDER BY AVG(DurationDays) DESC Limit 10
-```
-Results pulled: 
+Here we see again that years 2017-2018 have a drastically different result than previous years, particularly that the fires were abalze for a significantly longer amount of time on average. Again this could be due to decreased resources, temperature differences, and drought. 
 
-<img src="images/BQ.wildfire.counties.duration.avg.png?raw=true" width="600"/>
+A SQL query was developed to see which fires in particular where burning the longest along with the year they started and the number of acres that were burned by this fire. 
 
-6. Fires with Above Average Duration Along with Acres Burned and Year of Fire
+5. Fires with Above Average Duration Along with Acres Burned and Year of Fire
 ``` SQL
 SELECT
   Name as Name,
@@ -111,7 +104,10 @@ ORDER BY Duration_in_Days DESC LIMIT 10
 Results pulled:
 
 <img src="images/BQ.wildfires.firesabovedur.png?raw=true" width="600"/>
-____
+
+Within this table you can see that there was an overwhelming amount of these fires happening within in one year, 2018. To be specific, all but 2 of these fires. In addition, one of these fires that burned for almost a whole year, the Montecito Flooding/Mudflows fire burned a reported "0" acres. Much of these fires listed with the highest duration are much lower than the average wildfire of this list's acreage burned being 3,241.60 acres. Which calls for further investigation into the validity of this dataset, in particular the measurement of time. 
+
+_______
 
 
 ### 3. Using R for Further Statistical Analysis
@@ -140,10 +136,10 @@ ggplot(wdfm, aes(x=ArchiveYear, y= value)) +
 
 After, some detailed visualizations were created using the visualization platform of Tableau. For access to the live dashboard with highlighting features, please visit the dashboard on Tableau Public, found [here](https://public.tableau.com/app/profile/megan.schlebecker/viz/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata).
 
-One interesting theme appearing among the data was the counties with the highest acreage burned were not the counties that had the most fires. 
+One interesting theme appearing among the data was the counties with the highest acreage burned were not the counties that had the most fires, as noted previously when completing SQL analysis. The following map graph displays this interesting phenonmenon, but is best experienced at the link in the previous paragraph. As theorized before, the reason this discrepancy may exist could be due to environmental differences in forestry between the counties, increased draught in some counties, and the population differences between counties. However, it is still important to note and could be useful information to know in order to better prevent wildfires between the counties once analysis on the cause of these forest fires is completed. For instance, one county may benefit from better prevention education towards the general population on the effects of draught and increased temperatures leading to more instances of fires while another may benefit from an increased patrol of fire watchers spread out amongst the forest regions. 
 
 <img src="images/Tab.wildfires.counties.png?raw=true" width="650"/>
 
-
+Another 
 
 

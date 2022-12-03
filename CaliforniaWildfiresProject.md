@@ -121,7 +121,7 @@ After, some detailed visualizations were created using the visualization platfor
 
 One interesting theme appearing among the data was the counties with the highest acreage burned were not the counties that had the most fires. 
 
-
+<img src="images/Tab.wildfires.counties.png?raw=true" width="650"/>
 
 
 

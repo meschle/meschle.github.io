@@ -72,6 +72,9 @@ WHERE DurationDays>(SELECT AVG(DurationDays) from `wildfires-1878-2019.Californi
 GROUP BY Counties
 ORDER BY AVG(DurationDays) DESC Limit 10
 ```
+Results pulled: 
+
+<img src="images/BQ.wildfire.counties.duration.avg.png?raw=true" width="600"/>
 
 5. Fires with Above Average Duration
 ``` SQL

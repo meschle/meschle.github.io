@@ -43,6 +43,8 @@ FROM `wildfires-1878-2019.California_Wildfires.wildfires`
 GROUP BY Counties
 ORDER BY Total_Fire_Incidents DESC LIMIT 10
 ```
+Results pulled:
+
 <img src="images/BQ.wildfire.top10count.png?raw=true" width="300"/>
 
 3. Average Duration of Wildfires in Days per Year
@@ -55,6 +57,9 @@ FROM `wildfires-1878-2019.California_Wildfires.wildfires`
 GROUP BY ArchiveYear
 ORDER BY ArchiveYear ASC
 ```
+Results pulled: 
+
+<img src="images/BQ.wildfire.avgdurpery.png?raw=true" width="300"/>
 
 4. Counties with Above Average Durations of Wildfires and Total Fires Above Duration and Length of Fires
 ``` SQL

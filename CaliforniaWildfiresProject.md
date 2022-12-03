@@ -113,14 +113,16 @@ ggplot(wdfm, aes(x=ArchiveYear, y= value)) +
   scale_x_continuous(name=waiver(), breaks= waiver(), n.breaks=7)
  ```
  <img src="images/R.wildfires.fatandinj.png?raw=true" width="800"/>
- 
+
+
+### 4. Advanced visualization using Tableau Public and Desktop Tableau
+
+After, some detailed visualizations were created using the visualization platform of Tableau. For access to the live dashboard with highlighting features, please visit the dashboard on Tableau Public, found [here](https://public.tableau.com/app/profile/megan.schlebecker/viz/ProjectWildfire/CaliforniaWildfiresbetween2013-2019Patternsamongthedata).
+
+One interesting theme appearing among the data was the counties with the highest acreage burned were not the counties that had the most fires. 
 
 
 
 
 
-### 4. Provide a basis for further data collection through surveys or experiments
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

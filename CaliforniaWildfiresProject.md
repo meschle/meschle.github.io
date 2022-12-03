@@ -93,9 +93,31 @@ Results pulled:
 ____
 
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### 3. Using R for Further Statistical Analysis
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Following, the dataset was uploaded into R Studio for continued statistical analysis and also basic visualization. A detailed R Markdown file can be found [here](file:///Users/meganschlebecker/Desktop/Learning%20R/Cal-Wildfires-Markdown.html).
+
+After installing and loading essential packages into R Studio, including `tidyverse`, `skimr`, `ggplot2`, and `reshape2 `, some simple bar graphs were developed to visualize the data.
+
+Below is an example of a graph developed using R that compares fatalities and injuries per year among all documented wildfires. 
+
+```R
+wildfire_df["Fatalities"][is.na(wildfire_df["Fatalities"])] <- 0
+wildfire_df["Injuries"][is.na(wildfire_df["Injuries"])] <- 0
+
+wdfm <- melt(wildfire_df[,c('ArchiveYear', 'Fatalities', 'Injuries')], id.vars=1)
+
+ggplot(wdfm, aes(x=ArchiveYear, y= value)) +
+  geom_bar(aes(fill = variable), stat = "identity", position = "dodge")+
+  labs(title = "Injuries and Fatalities from California \nWildfires Years 2013-2019", x= "Year", y= "Amount of Injuries or Fatalities")+
+  scale_x_continuous(name=waiver(), breaks= waiver(), n.breaks=7)
+ ```
+ 
+ 
+
+
+
+
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 

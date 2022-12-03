@@ -34,7 +34,7 @@ Results pulled:
 
 <img src="images/BQ.results.totalperyear.png?raw=true" width="300"/>
 
-2. Counties with the Most Acres Burned over 2013-2019
+2. Counties with the Most Fires over 2013-2019
 ```SQL
 SELECT
   Counties as Counties, 
@@ -43,6 +43,36 @@ FROM `wildfires-1878-2019.California_Wildfires.wildfires`
 GROUP BY Counties
 ORDER BY Total_Fire_Incidents DESC LIMIT 10
 ```
+<img src="images/BQ.wildfire.top10count.png?raw=true" width="300"/>
+
+3. Average Duration of Wildfires in Days per Year
+
+```SQL 
+SELECT 
+  ArchiveYear as Year,
+  ROUND(AVG(DurationDays),2) as Duration_in_Days
+FROM `wildfires-1878-2019.California_Wildfires.wildfires` 
+GROUP BY ArchiveYear
+ORDER BY ArchiveYear ASC
+```
+
+4. Counties with Above Average Durations of Wildfires and Total Fires Above Duration and Length of Fires
+``` SQL
+SELECT 
+  Counties as Counties,
+  COUNT(AcresBurned) as Total_Fires_Above_Avg_Duration,
+  ROUND(AVG(DurationDays),2) as Avg_Duration_of_Fires_Above_Duration
+FROM `wildfires-1878-2019.California_Wildfires.wildfires`
+WHERE DurationDays>(SELECT AVG(DurationDays) from `wildfires-1878-2019.California_Wildfires.wildfires`)
+GROUP BY Counties
+ORDER BY AVG(DurationDays) DESC Limit 10
+```
+
+5. Fires with Above Average Duration
+``` SQL
+
+
+____
 
 
 ### 3. Support the selection of appropriate statistical tools and techniques

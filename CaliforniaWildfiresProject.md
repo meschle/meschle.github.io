@@ -34,9 +34,22 @@ Results pulled:
 
 <img src="images/BQ.results.totalperyear.png?raw=true" width="300"/>
 
-From this query, we can see already that years 2017 and 2018 had a significant increase in acreage burned
+From this query, we can see already that years 2017 and 2018 had a significant increase in acreage burned per year, which brought up considerations as to why these years were so different. In order to understand more, another query was completed in order to understand if there was also an increase in total fires in these years, as well. 
 
-2. Counties with the Most Fires over 2013-2019
+2. Total Wildfires per Year
+```
+SELECT 
+  ArchiveYear as Year,
+  COUNT(AcresBurned) as Number_of_Fires
+FROM `wildfires-1878-2019.California_Wildfires.wildfires`
+GROUP BY Year
+ORDER BY Year ASC 
+```
+Results pulled: 
+
+<img src="
+
+3. Counties with the Most Fires over 2013-2019
 ```SQL
 SELECT
   Counties as Counties, 
@@ -49,7 +62,7 @@ Results pulled:
 
 <img src="images/BQ.wildfire.top10count.png?raw=true" width="300"/>
 
-3. Average Duration of Wildfires in Days per Year
+4. Average Duration of Wildfires in Days per Year
 
 ```SQL 
 SELECT 
@@ -63,7 +76,7 @@ Results pulled:
 
 <img src="images/BQ.wildfire.avgdurpery.png?raw=true" width="300"/>
 
-4. Counties with Above Average Durations of Wildfires and Total Fires Above Duration and Length of Fires
+5. Counties with Above Average Durations of Wildfires and Total Fires Above Duration and Length of Fires
 ``` SQL
 SELECT 
   Counties as Counties,
@@ -78,7 +91,7 @@ Results pulled:
 
 <img src="images/BQ.wildfire.counties.duration.avg.png?raw=true" width="600"/>
 
-5. Fires with Above Average Duration Along with Acres Burned and Year of Fire
+6. Fires with Above Average Duration Along with Acres Burned and Year of Fire
 ``` SQL
 SELECT
   Name as Name,

@@ -4,7 +4,7 @@
 As the effects of climate change become ever present in our world, environmental destruction is starting to become more of a commonality rather than a rarity. One such effect of climate change is the increase in wildfires, as seen within the state of California. The purpose of this project was to use statistical analysis and data visualization tools to find trends among this dataset that could be helpful for prevention of wildfires as well as any points for future analysis. In addition, this page will document the progress through analysis and visualization for this project, including SQL queries, statistical analysis using R, and visualization using Tableau. 
 
 
-The dataset used was taken from a public access data set on Kaggle titled [California Wildfires 2013-2020](https://www.kaggle.com/datasets/ananthu017/california-wildfire-incidents-20132020), the data in this dataset was originally sourced from [CalFire](https://www.fire.ca.gov/), the website of the California Department of Forestry and Fire Protection. The data included information on the location (longitude, latitude, and county name) of the fire, the amount of acres burned, the name of the fire, the resources used to contain the fire, the fatalities and injuries from the fire, and the start and entinguish time of the fire among various other variables recorded. 
+The dataset used was taken from a public access data set on Kaggle titled [California Wildfires 2013-2020](https://www.kaggle.com/datasets/ananthu017/california-wildfire-incidents-20132020), the data in this dataset was originally sourced from [CalFire](https://www.fire.ca.gov/), the website of the California Department of Forestry and Fire Protection. The data included information on the location (longitude, latitude, and county name) of the fire, the amount of acres burned, the name of the fire, the administration resources used to contain the fire like number of dozers, the fatalities and injuries from the fire, and the start and entinguish time of the fire among various other variables recorded. 
 ___
 
 ### 1. Data Validation and Cleaning
@@ -47,7 +47,13 @@ ORDER BY Year ASC
 ```
 Results pulled: 
 
-<img src="
+<img src="images/BQ.wildfire.firesperyear.png?raw=true" width="300"/>
+
+As predicted, there was a similar pattern with the amount of acres burned per year as the number of wildfires per year also increased in the years 2017 and 2018. However, 2019, did have an increased number of wildfires in comparison to other years, but had a relatively low number of acres burned. Due to the previous years' destruction, it could be hypothesized that more money and resources were given to response efforts in order to minize damage, as well as more experience contributing to faster extinguishment of the fires. 
+
+In order to verify this hypothesize, more information would need to be gathered pertaining specifically to the amount of financial resources given to response efforts. This could be a point for further analysis. 
+
+Following, deeper analysis was focused on the county level to see if these general trends also appeared within the counties. The next SQL query was preformed to see which counties had the most fires overall. 
 
 3. Counties with the Most Fires over 2013-2019
 ```SQL

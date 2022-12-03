@@ -148,4 +148,23 @@ As you can see below, the most common start times are 3pm - 4pm. Thus, it could 
 
 <img src="images/Tab.wildfires.clock.png?raw=true" width="500"/>
 
+Lastly, the chart below was developed to show the counties that had injuries and fatalities, in order to understand which counties are plauged with the dedliest fires. This information could be used to look further into the steps taken by the public administration, including extinguishng teams, fire departments, and police efforts to see if there could be improvements compared to other counties, which could be a useful place for further analysis including response time and attempts to inform, warn, and evacuate the public. Of course, there are numerous factos as to why these counties experienced the highest number of injuries and fatalities, but furhter research could be useful to help prevent any further injuries or fatalities. 
+
+<img src="images/Tab.wildfires.doublebar.png?raw=true" width="600"/>
+
+## Conclusions and Take Aways
+
+After completing this project, there were a few major points to be taken from this analysis. 
+
+### Themes Among the Data and Possible Pointers for Prevention
+
+- Years 2017 and 2018 were the highest for both acreage burned, amount of fires, average duration of fires, and fatalities; however, 2019 was lower than both previous years in all four catergories. 
+- The counties that were highest in acreage burned were not the same counties with the most number of wildfires, thus prevention efforts should look different on both ends. 
+- The most common start time of fires is afternoon, particulary 3pm - 4pm. 
+
+### Points for Further Analysis
+
+- An exploration into the cause of wildfires, particularly by county, could be helpful to understand the differences in size and duraiton of wildfires in different counties. 
+- A deep dive into understanding the reasoning as to why 2019 had such dramatic decreases in wildfires after 2017-2018 would be helpful for continued prevention efforts. What in particular changed in 2019 after two years that were so destrutful? Possible reasons could include financial resources and public education. 
+
 

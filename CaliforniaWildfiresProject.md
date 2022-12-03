@@ -76,8 +76,18 @@ Results pulled:
 
 <img src="images/BQ.wildfire.counties.duration.avg.png?raw=true" width="600"/>
 
-5. Fires with Above Average Duration
+5. Fires with Above Average Duration Along with Acres Burned and Year of Fire
 ``` SQL
+SELECT
+  Name as Name,
+  AcresBurned as Acres_Burned,
+  ROUND(DurationDays,2) as Duration_in_Days,
+  ArchiveYear as Year
+FROM `wildfires-1878-2019.California_Wildfires.wildfires`
+WHERE DurationDays>(Select AVG(DurationDays) from `wildfires-1878-2019.California_Wildfires.wildfires`)
+ORDER BY Duration_in_Days DESC LIMIT 10
+```
+Results pulled:
 
 
 ____

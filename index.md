@@ -11,7 +11,7 @@
 
 ### SQL Queries and R Markdowns
 
-- [California Wildfires 2013-2019: Patterns among the Data](CaliforniaWildfiresProject.md)
+- [California Wildfires 2013-2019: Patterns among the Data (Markdown)](CaliforniaWildfiresProject.md)
 
 
 ---

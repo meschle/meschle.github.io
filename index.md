@@ -12,6 +12,7 @@
 ### SQL Queries and R Markdowns
 
 - [California Wildfires 2013-2019: Patterns among the Data (Markdown)](CaliforniaWildfiresProject.md)
+- [COVID Cases, Deaths, and Vaccination Records Globablly (SQL script)](COVID_Project.sql) 
 
 
 ---

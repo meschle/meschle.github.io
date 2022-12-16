@@ -14,7 +14,7 @@
 
 ### SQL Queries and R Markdowns
 
-- COVID Cases, Deaths, and Vaccination Records Globablly [(SQL script)](COVID_Project.sql)/[Markdown](https://github.com/meschle/COVID_Trends/blob/9b9eba6891c1a5fe930b0243790eb822edeff856/COVID-markdown.md) 
+- COVID Cases, Deaths, and Vaccination Records Globablly [(SQL script)](COVID_Project.sql)/[(Markdown)](COVID-markdown.md)
 - [California Wildfires 2013-2019: Patterns among the Data (Markdown)](CaliforniaWildfiresProject.md)
 
 

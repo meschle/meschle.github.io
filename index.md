@@ -2,7 +2,10 @@
 
 ---
 
-### Tableau Visualizations At a Glance
+### Data Visualizations At a Glance
+
+[Bike Sales: Dashboard in Excel](https://github.com/meschle/Bike-Sales-Excel-/blob/main/README.md)
+<img src="Images/Bike_Sales_Dashboard_SG.png?raw=true"/>
 
 [Global COVID Trends (Jan '20 - Nov '22)](https://public.tableau.com/app/profile/megan.schlebecker/viz/GlobalCOVIDTrendsJan20-Nov22/GlobalCOVIDTrends)
 <img src="images/Tab.COVID.dashboard.png?raw=true"/>

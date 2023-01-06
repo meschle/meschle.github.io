@@ -4,6 +4,14 @@ All projects are linked to respective repositories in GitHub, please click the n
 
 ---
 
+### [Movie Industry Correlations](https://github.com/meschle/Movie-Correlations)
+
+This was a quick project I did within in Python to help practice skills relating to examining and visualizing correlations. I used a Kaggle data source on the movie industry to look at some the strongest relationships between different contributing factors and the total gross box office sales. Below is an example of a correlation matrix I developed. In this repository you'll find a Jupyter Notebook with all the Python script used in this project. 
+
+- [Jupyter Notebook](https://github.com/meschle/Movie-Correlations/blob/main/Movie%20Industry%20Correlations%20Project.ipynb)
+
+<img src="images/python.movie_matrix.png?raw=true"/>
+
 ### [Bike Sales: Dashboard in Excel](https://github.com/meschle/Bike-Sales-Excel-)
 
 In this short project, I practiced my Excel skills by cleaning provided data, creating pivot tables, and an interactive dashboard all within in Excel. Please visit the [linked respository](https://github.com/meschle/Bike-Sales-Excel-) to view related files. 
